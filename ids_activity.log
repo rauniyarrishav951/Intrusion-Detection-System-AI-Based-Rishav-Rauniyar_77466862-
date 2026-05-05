@@ -1,0 +1,20 @@
+[2026-02-17T12:15:25.466752] INFO |  | Successfully trained 3 models with 1000 samples
+[2026-02-17T12:16:35.441187] INFO |  | Model gradient_boosting activated for detection
+[2026-02-17T12:16:40.360390] INFO |  | Model gradient_boosting activated for detection
+[2026-02-17T12:16:58.491228] INFO |  | Collected 20 network traffic samples
+[2026-02-17T12:19:20.878518] INFO |  | Successfully trained 3 models with 1000 samples
+[2026-02-17T12:21:30.290715] INFO |  | Manual event created: Simulated intrusion event
+[2026-02-17T12:22:30.607452] INFO |  | Model gradient_boosting activated for detection
+[2026-02-17T12:22:35.762799] INFO |  | Model random_forest activated for detection
+[2026-02-17T12:22:53.168837] INFO |  | Successfully trained 3 models with 1000 samples
+[2026-02-17T12:23:15.741764] INFO |  | Collected 20 network traffic samples
+[2026-02-24T02:31:20.803186] INFO |  | Model random_forest activated for detection
+[2026-02-24T02:31:45.113486] INFO |  | Collected 20 network traffic samples
+[2026-03-02T10:25:44.280432] INFO |  | Manual event created: Simulated intrusion event
+[2026-03-02T10:25:56.589923] INFO |  | Manual event created: Simulated intrusion event
+[2026-03-02T10:25:57.192047] INFO |  | Manual event created: Simulated intrusion event
+[2026-03-28T13:01:55.810746] INFO |  | Real-time network monitoring activated
+[2026-03-28T13:01:59.120953] INFO |  | Real-time network monitoring deactivated
+[2026-03-28T13:02:38.606061] INFO |  | Real-time network monitoring activated
+[2026-03-28T13:02:53.712664] INFO |  | Real-time network monitoring deactivated
+[2026-03-28T13:04:52.540907] INFO |  | Manual event created: Network Traffic 
