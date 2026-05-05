@@ -1,0 +1,14 @@
+TABLE: system_config
+--------------------
+COLUMNS: id, config_key, config_value, config_type, description, updated_by, updated_at
+ROWS: 8
+id | config_key                  | config_value | config_type | description                                     | updated_by | updated_at         
+---+-----------------------------+--------------+-------------+-------------------------------------------------+------------+--------------------
+1  | model_confidence_threshold  | 0.7          | float       | Minimum confidence score for alert generation   | None       | 2026-04-30 11:19:45
+2  | alert_severity_high         | 0.8          | float       | Confidence threshold for HIGH severity alerts   | None       | 2026-04-30 11:19:45
+3  | alert_severity_medium       | 0.5          | float       | Confidence threshold for MEDIUM severity alerts | None       | 2026-04-30 11:19:45
+4  | packet_size_threshold       | 1400         | int         | Packet size threshold for anomaly detection     | None       | 2026-04-30 11:19:45
+5  | max_alerts_per_minute       | 100          | int         | Maximum alerts per minute to prevent flooding   | None       | 2026-04-30 11:19:45
+6  | log_retention_days          | 30           | int         | Number of days to retain logs                   | None       | 2026-04-30 11:19:45
+7  | auto_train_interval         | 24           | int         | Hours between automatic model retraining        | None       | 2026-04-30 11:19:45
+8  | enable_real_time_monitoring | true         | boolean     | Enable real-time packet monitoring              | None       | 2026-04-30 11:19:45

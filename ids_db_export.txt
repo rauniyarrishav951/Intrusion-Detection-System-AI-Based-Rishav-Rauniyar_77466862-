@@ -1,0 +1,61 @@
+IDS Database Export
+===================
+
+TABLE: activity_logs
+--------------------
+COLUMNS: id, timestamp, event_type, message, user_id
+ROWS: 0
+
+TABLE: admin_audit_log
+----------------------
+COLUMNS: id, admin_id, admin_username, action_type, action_details, target_user_id, target_username, ip_address, timestamp
+ROWS: 0
+
+TABLE: detection_events
+-----------------------
+COLUMNS: id, source_ip, dest_ip, protocol, severity, message, model_used, confidence, timestamp
+ROWS: 0
+
+TABLE: model_metrics
+--------------------
+COLUMNS: id, model_name, accuracy, precision, recall, f1_score, is_active, created_at
+ROWS: 6
+id | model_name   | accuracy           | precision          | recall             | f1_score           | is_active | created_at         
+---+--------------+--------------------+--------------------+--------------------+--------------------+-----------+--------------------
+1  | RandomForest | 0.9908256880733946 | 1.0                | 0.9090909090909091 | 0.9523809523809523 | 1         | 2026-04-30 11:19:45
+2  | SVM          | 0.9724770642201835 | 1.0                | 0.7272727272727273 | 0.8421052631578948 | 0         | 2026-04-30 11:19:45
+3  | RandomForest | 0.981651376146789  | 0.9090909090909091 | 0.9090909090909091 | 0.9090909090909091 | 1         | 2026-04-30 11:39:22
+4  | SVM          | 0.9724770642201835 | 1.0                | 0.7272727272727273 | 0.8421052631578948 | 0         | 2026-04-30 11:39:22
+5  | RandomForest | 0.9908256880733946 | 1.0                | 0.9090909090909091 | 0.9523809523809523 | 1         | 2026-04-30 11:41:11
+6  | SVM          | 0.9724770642201835 | 1.0                | 0.7272727272727273 | 0.8421052631578948 | 0         | 2026-04-30 11:41:11
+
+TABLE: network_traffic
+----------------------
+COLUMNS: id, timestamp, source_ip, dest_ip, source_port, dest_port, protocol, packet_size, is_alert, attack_type
+ROWS: 0
+
+TABLE: system_config
+--------------------
+COLUMNS: id, config_key, config_value, config_type, description, updated_by, updated_at
+ROWS: 8
+id | config_key                  | config_value | config_type | description                                     | updated_by | updated_at         
+---+-----------------------------+--------------+-------------+-------------------------------------------------+------------+--------------------
+1  | model_confidence_threshold  | 0.7          | float       | Minimum confidence score for alert generation   | None       | 2026-04-30 11:19:45
+2  | alert_severity_high         | 0.8          | float       | Confidence threshold for HIGH severity alerts   | None       | 2026-04-30 11:19:45
+3  | alert_severity_medium       | 0.5          | float       | Confidence threshold for MEDIUM severity alerts | None       | 2026-04-30 11:19:45
+4  | packet_size_threshold       | 1400         | int         | Packet size threshold for anomaly detection     | None       | 2026-04-30 11:19:45
+5  | max_alerts_per_minute       | 100          | int         | Maximum alerts per minute to prevent flooding   | None       | 2026-04-30 11:19:45
+6  | log_retention_days          | 30           | int         | Number of days to retain logs                   | None       | 2026-04-30 11:19:45
+7  | auto_train_interval         | 24           | int         | Hours between automatic model retraining        | None       | 2026-04-30 11:19:45
+8  | enable_real_time_monitoring | true         | boolean     | Enable real-time packet monitoring              | None       | 2026-04-30 11:19:45
+
+TABLE: user_activity
+--------------------
+COLUMNS: id, user_id, username, activity_type, activity_details, ip_address, timestamp
+ROWS: 0
+
+TABLE: users
+------------
+COLUMNS: id, username, password_hash, firstname, lastname, email, phone, role, is_active, last_login, created_at
+ROWS: 0
+

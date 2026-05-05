@@ -1,0 +1,4 @@
+TABLE: detection_events
+-----------------------
+COLUMNS: id, source_ip, dest_ip, protocol, severity, message, model_used, confidence, timestamp
+ROWS: 0

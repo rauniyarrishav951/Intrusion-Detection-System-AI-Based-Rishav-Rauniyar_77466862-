@@ -1,0 +1,4 @@
+TABLE: admin_audit_log
+----------------------
+COLUMNS: id, admin_id, admin_username, action_type, action_details, target_user_id, target_username, ip_address, timestamp
+ROWS: 0

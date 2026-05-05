@@ -1,0 +1,4 @@
+TABLE: user_activity
+--------------------
+COLUMNS: id, user_id, username, activity_type, activity_details, ip_address, timestamp
+ROWS: 0

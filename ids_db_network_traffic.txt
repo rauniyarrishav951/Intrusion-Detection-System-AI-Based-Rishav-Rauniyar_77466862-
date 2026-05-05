@@ -1,0 +1,4 @@
+TABLE: network_traffic
+----------------------
+COLUMNS: id, timestamp, source_ip, dest_ip, source_port, dest_port, protocol, packet_size, is_alert, attack_type
+ROWS: 0

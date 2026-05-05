@@ -1,0 +1,4 @@
+TABLE: users
+------------
+COLUMNS: id, username, password_hash, firstname, lastname, email, phone, role, is_active, last_login, created_at
+ROWS: 0

@@ -1,0 +1,4 @@
+TABLE: activity_logs
+--------------------
+COLUMNS: id, timestamp, event_type, message, user_id
+ROWS: 0
